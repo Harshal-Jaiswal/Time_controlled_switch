@@ -10,10 +10,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+ 
   p=0;
   digitalWrite(c, LOW);
   digitalWrite(13, HIGH);
   //delay(10000);
+  // manupulate the below longDelayInSeconds to increase or decrease time in seconds.
   longDelayInSeconds = 5; //time for switch to be 'on' in sec
   // longDelayInSeconds = 60 * x ; for 'x' minutes
   while (p < longDelayInSeconds) {
